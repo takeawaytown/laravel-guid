@@ -14,7 +14,8 @@
 	    "laravel/framework": ">=5.0"
     },
     "require-dev": {
-        "phpspec/phpspec": "~2.0"
+        "phpunit/phpunit": ">=4.8, <6",
+        "mockery/mockery": "0.9.*"
     },
     "autoload": {
         "psr-4": {
