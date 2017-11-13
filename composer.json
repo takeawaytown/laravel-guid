@@ -1,0 +1,36 @@
+{
+    "name": "takeawaytown/laravel-guid",
+    "description": "A class for generating GUID strings.",
+    "keywords": ["laravel", "takeawaytown", "guid"],
+    "license": "MIT License",
+    "authors": [
+        {
+          "name": "Alex Scott",
+          "email": "alex.scott@takeawaytown.co.uk"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+	    "laravel/framework": ">=5.0"
+    },
+    "require-dev": {
+        "phpspec/phpspec": "~2.0"
+    },
+    "autoload": {
+        "psr-4": {
+          "TakeawayTown\\LaravelGuid\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "aliases": {
+                "Guid": "TakeawayTown\\LaravelGuid\\GuidFacade"
+            },
+            "providers": [
+                "TakeawayTown\\LaravelGuid\\GuidServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
